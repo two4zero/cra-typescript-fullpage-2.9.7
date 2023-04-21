@@ -341,7 +341,9 @@
       bounceEasing: "",
 
       preventDefault: true,
-      preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ },
+      preventDefaultException: {
+        tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|LABEL)$/,
+      },
 
       HWCompositing: true,
       useTransition: true,
@@ -1231,7 +1233,7 @@
         return;
       }
 
-      e.preventDefault();
+      // e.preventDefault();
 
       var wheelDeltaX,
         wheelDeltaY,
